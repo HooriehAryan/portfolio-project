@@ -56,27 +56,35 @@ p {
 .project-image {
   border: 5px solid var(--primary-color);
 }
-.about-section {
+.content-container {
   padding: 20px 20px;
 }
-.about-section h1 {
+.content h1 {
   margin-top: 40px;
   font-size: 43px;
   line-height: 80px;
 }
-.about-section h2 {
+.content h2 {
   font-size: 22px;
   line-height: 50px;
   font-family: var(--default-font-family);
 }
-.about-section p {
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+}
+.img-footer {
+  margin-top: 0px;
+}
+.content-container p {
   margin-top: 10px;
   margin-bottom: 25px;
   font-size: 16px;
   font-family: var(--default-font-family);
   line-height: 35px;
 }
-.about-section-content {
+.content {
   margin-right: 10px;
 }
 .btn-branding {
@@ -112,7 +120,7 @@ p {
 .project-description {
   padding: 100px 60px;
 }
-.about-section img {
+.content-container img {
   border: 5px solid var(--primary-color);
 }
 
@@ -121,17 +129,17 @@ p {
     padding-top: 25px;
   }
 
-  .about-section-content h1 {
+  .content h1 {
     font-size: 36px;
     line-height: 2;
     text-align: left;
   }
-  .about-section-content h2 {
+  .content h2 {
     font-size: 18px;
     line-height: 1.7;
     text-align: left;
   }
-  .about-section-content p {
+  .content p {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
@@ -158,42 +166,42 @@ p {
   .hero {
     padding: 80px 20px;
   }
-  .about-section h1 {
+  .content-container h1 {
     margin-top: 0;
   }
 
-  .about-section-content h1 {
+  .content h1 {
     font-size: 24px;
     line-height: 2;
     text-align: left;
   }
-  .about-section-content h2 {
+  .content h2 {
     font-size: 16px;
     line-height: 1.7;
     text-align: left;
   }
-  .about-section-content p {
+  .content p {
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
   }
 }
 @media (max-width: 768px) {
-  .about-section {
+  .content-container {
     text-align: center;
   }
 
-  .about-section-content p {
+  .content p {
     text-align: center;
   }
-  .about-section-content h1 {
+  .content h1 {
     text-align: center;
     margin-top: 0;
   }
-  .about-section-content h2 {
+  .content h2 {
     text-align: center;
   }
-  .about-section img {
+  .content-container img {
     width: 300px;
   }
 }
