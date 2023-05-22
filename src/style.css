@@ -2,6 +2,7 @@
   --branding-color: #003d63;
   --primary-color: #9d8dd6;
   --header-color: #4f3e8a;
+  --active-link-color: #8975c8;
   --main-background-color: #e9e5f7;
   --secodary-color: rgb(226, 240, 245);
   --heading-font-family: "Playfair Display", serif;
@@ -29,13 +30,33 @@ p {
   font-weight: normal;
   line-height: 30px;
 }
-.col-6 img {
-  border: 5px solid var(--primary-color);
+h3 a {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+
+h3 a:hover {
+  color: var(--header-color);
+}
+.content a {
+  text-decoration: none;
+}
+.col img:hover {
+  transform: scale(1.1);
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--active-link-color);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--header-color);
+}
+.nav-item {
+  font-weight: bold;
 }
 .hero {
   background: var(--secodary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 50px 20px;
   border: 10px solid var(--primary-color);
 }
 .hero p {
@@ -57,10 +78,9 @@ p {
   border: 5px solid var(--primary-color);
 }
 .content-container {
-  padding: 20px 20px;
+  padding: 0px 20px;
 }
 .content h1 {
-  margin-top: 40px;
   font-size: 43px;
   line-height: 80px;
 }
@@ -79,7 +99,7 @@ p {
 }
 .content-container p {
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 7px;
   font-size: 16px;
   font-family: var(--default-font-family);
   line-height: 35px;
@@ -87,6 +107,10 @@ p {
 .content {
   margin-right: 10px;
 }
+.profile-image-padding {
+  padding-left: 120px;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -114,6 +138,7 @@ p {
 .btn-branding-outline:hover {
   background: var(--primary-color);
 }
+
 .nav-color {
   background: var(--main-background-color);
 }
@@ -143,6 +168,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+  }
+  .profile-image-padding {
+    padding-left: 0;
   }
 }
 @media (max-width: 991px) {
@@ -184,6 +212,9 @@ p {
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
+  }
+  .profile-image-padding {
+    padding-left: 0;
   }
 }
 @media (max-width: 768px) {
