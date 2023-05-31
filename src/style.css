@@ -150,6 +150,7 @@ h3 a:hover {
 .contact-box {
   background: white;
   padding: 30px 120px;
+  margin-bottom: 50px;
 }
 .contact-box p {
   margin: 0;
